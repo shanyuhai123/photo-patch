@@ -1,0 +1,5 @@
+# git
+.git
+
+# 依赖、产物
+node_modules
