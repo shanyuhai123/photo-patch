@@ -2,4 +2,7 @@
 .git
 
 # 依赖、产物
+/input/
+/output/
 node_modules
+assets

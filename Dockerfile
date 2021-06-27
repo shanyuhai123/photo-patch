@@ -1,4 +1,4 @@
-FROM node:14.4.0-slim
+FROM node:12.14.1-slim
 
 # 指定用户、目录
 USER root
@@ -7,7 +7,7 @@ WORKDIR /home/node/app
 
 # COPY lock 仅安装生产依赖
 COPY --chown=node:node . .
-RUN yarn config set registry https://registry.npm.taobao.org/ && yarn install --production
+RUN yarn install --production
 
 # 运行
 ENTRYPOINT ["node", "index"]
